@@ -4,7 +4,7 @@
       <nav id="navbar" class="nav-menu navbar navbar-custom">
         <ul>
           <span v-for="menu in menus" :key="menu">
-            <router-link :to="menu.link" :class="menu.classe"><i class="icon" :class="menu.icon"></i>{{ menu.nome }}</router-link>
+            <router-link :to="menu.link" class="nav-link scrollto"><i class="icon" :class="menu.icon"></i>{{ menu.nome }}</router-link>
           </span>
         </ul>
       </nav>

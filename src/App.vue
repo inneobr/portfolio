@@ -1,11 +1,6 @@
 <template> 
   <Header/>
   <router-view/>
-  <footer id="footer">
-    <div class="copyright">
-      &copy; <strong><span>inneo</span> by <a href="https://www.linkedin.com/in/inneobr/" target="_blanc">Eduardo Cruz</a></strong>
-    </div>
-  </footer>
 </template>
 
 <script>
