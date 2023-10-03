@@ -1,5 +1,5 @@
 const Services = {
-  url: "service:9200/"
+  url: "https://api.inneo.org"
 }
 
 export default Services;
