@@ -1,5 +1,5 @@
 const Services = {
-  url: "service/"
+  url: "service:9200/"
 }
 
 export default Services;
