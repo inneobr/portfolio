@@ -137,6 +137,16 @@ const About = () => {
                   <div key={itemIndex}>
                     {/* title */}
                     <div>{item.title}</div>
+                    <div className="hidden md:flex">-</div>
+                    <div>{item.stage}</div>
+                    <div className="flex gap-x-4">
+                      {/* icons */}
+                      {item.icons?.map((icon, itemIndex) => {
+                        return (
+                          <div className="text-2xl transition-all duration-500">{icon}</div>
+                        )
+                      })}
+                    </div>
                   </div>
                 );
               })}
