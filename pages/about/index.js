@@ -6,14 +6,15 @@ import {
   FaHtml5,
   FaCss3,
   FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
+  FaNode,
+  FaVuejs,
+  FaJava,
+  FaAngular,
+  FaBootstrap
 } from "react-icons/fa";
 
 import {
-  SiNextdotjs,
-  SiFramer,
+  SiPhp,
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
@@ -24,32 +25,34 @@ import Circles from "../../components/Circles";
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
+import CountUp from "react-countup";
+
 
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: 'habilidades',
     info: [
       {
-        title: 'Web Development',
+        title: 'Desenvolvedor Frontend',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
+          <FaBootstrap />,
           <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaVuejs />,
+          <FaAngular />,
+          <FaNode />,
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: 'Backend',
+        icons: [<FaJava />, <SiPhp />],
       },
     ],
   },
   {
-    title: 'awards',
+    title: 'Prêmios',
     info: [
       {
         title: 'Webby Awards - Honoree',
@@ -62,7 +65,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'experience',
+    title: 'experiência',
     info: [
       {
         title: 'UX/UI Designer - XYZ Company',
@@ -79,7 +82,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'credentials',
+    title: 'credenciais',
     info: [
       {
         title: 'Web Development - ABC University, LA, CA',
@@ -112,21 +115,91 @@ const About = () => {
         >
           <Avatar />
         </motion.div>
+
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
           {/* text */}
           <div className="flex-1 flex flex-col justify-center">
-            <h2 className="h2">Histórias <span className="text-accent">cativantes</span> geram designs magníficos</h2>
-            <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-justify">              
+            <motion.h2 className="h2"
+              variants={fadeIn('right', 0.2)} 
+              initial='hidden' 
+              animate='show' 
+              exit='hidden' 
+            >
+              Histórias <span className="text-accent">cativantes</span> geram designs magníficos
+            </motion.h2>
+
+            <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-justify"
+              variants={fadeIn('right', 0.4)} 
+              initial='hidden' 
+              animate='show' 
+              exit='hidden'
+            >              
               Há 6 anos, comecei a trabalhar como freelancer como desenvolvedor. 
               Desde então, fiz trabalho remoto para agências, 
               prestei consultoria para startups e colaborei em produtos digitais para uso empresarial e de consumo.
-            </p>
+            </motion.p>
+
             {/* counters */}
-            <div>counters</div>
+            <motion.div className="hidden md:flex md:max-w-sl xl:max-w-none mx-auto xl:mx-0 mb-8"
+              variants={fadeIn('right', 0.6)} 
+              initial='hidden' 
+              animate='show' 
+              exit='hidden'
+            >
+              <div className="flex flex-1 xl:gap-x-6">
+                {/* experience */}
+                <div className="relative flex-1 after:w-[1px] after:h-full 
+                  after:bg-white/10 after:absolute after:top-0 after:right-0">
+                    <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                      <CountUp start={0} end={10} delay={1} duration={5} />+                     
+                    </div> 
+                    <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                      Anos de experiência
+                    </div>
+                </div>
+
+                {/* projetos */}
+                <div className="relative flex-1 after:w-[1px] after:h-full 
+                  after:bg-white/10 after:absolute after:top-0 after:right-0">
+                    <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                      <CountUp start={0} end={80} delay={1} duration={5} />+                     
+                    </div> 
+                    <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                      Projetos finalizados
+                    </div>
+                </div>
+                
+                {/* clientes */}
+                <div className="relative flex-1 after:w-[1px] after:h-full 
+                  after:bg-white/10 after:absolute after:top-0 after:right-0">
+                    <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                      <CountUp start={0} end={250} delay={1} duration={5} />+                     
+                    </div> 
+                    <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                      Clientes satisfeitos
+                    </div>
+                </div>
+
+                {/* sonhos */}
+                <div className="relative flex-1">
+                    <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                      <CountUp start={0} end={650} delay={1} duration={5} />+                     
+                    </div> 
+                    <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                      Sonhos realizados
+                    </div>
+                </div>
+              </div>                
+            </motion.div>
           </div>
 
           {/* info */}
-          <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+          <motion.div className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+            variants={fadeIn('left', 0.4)} 
+            initial='hidden' 
+            animate='show' 
+            exit='hidden'
+          >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemIndex) => { 
                 return (
@@ -142,7 +215,7 @@ const About = () => {
                 )
               })}
             </div>
-            <div className="bg-pink-400/10 py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4
+            <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4
               items-center xl:items-start">
               {aboutData[index].info.map((item, itemIndex) => {
                 return (
@@ -163,7 +236,7 @@ const About = () => {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
     </div>
   );
