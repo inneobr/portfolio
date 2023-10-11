@@ -1,5 +1,5 @@
-FROM node:latest
-WORKDIR /app
+FROM node:lts-alpine
+WORKDIR /usr/app
 
 COPY package*.json ./
 RUN npm install
@@ -7,5 +7,5 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-EXPOSE 8080
-CMD [ "npm", "run", "serve" ]
+EXPOSE 3000
+CMD [ "npm", "run", "dev" ]
