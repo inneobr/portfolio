@@ -1,5 +1,5 @@
 const Work = () => {
-  return <div>Work - Em construção</div>;
+  return <div>Work - Em construção!</div>;
 };
 
 export default Work;
