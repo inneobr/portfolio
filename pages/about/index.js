@@ -14,9 +14,7 @@ import {
 } from "react-icons/fa";
 
 import {
-  SiPhp,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiPhp
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";

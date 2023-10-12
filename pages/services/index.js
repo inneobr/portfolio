@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { delay, motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 
 const Services = () => {
   const [link, setLink] = useState('')
@@ -20,8 +22,14 @@ const Services = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowfullscreen="true"
             autoplay="true"/>
-        )}
-        <input className="w-full m-2 p-2 mx-1 rounded-[3px] text-black" type="text" onChange={handleChange} placeholder="link youtube." />     
+        )} 
+        <motion.input className="w-full m-2 p-2 mx-1 rounded-[3px] text-black" 
+            variants={fadeIn('top', 1.5)} 
+            initial='hidden' 
+            animate='show' 
+            exit='hidden'
+            type="text" onChange={handleChange}  placeholder="link youtube." />  
+         
       </div>
     </div>
   );
