@@ -12,7 +12,7 @@ import {
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'services', path: '/services', icon: <HiPlay /> },
+  { name: 'youtube', path: '/youtube', icon: <HiPlay /> },
   { name: 'work', path: '/work', icon: <HiViewColumns /> },
   {
     name: 'testimonials',
