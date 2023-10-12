@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
 const Services = () => {
-  const [link, setLink] = useState('')
+  const [link, setLink] = useState('');  
 
   const handleChange = (event) => {
-    var url = "https://www.youtube.com/embed/" + event.target.value.substr("https://www.youtube.com/watch?v=".length)+"?autoplay=1";
-    localStorage.setItem("uuid", url);
-    setLink(url);
+    if(event){
+      var weblink = "https://www.youtube.com/embed/" + event.target.value.substr("https://www.youtube.com/watch?v=".length)+"?autoplay=1";
+      setLink(weblink);
+    }
   };
   
   return (
