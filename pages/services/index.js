@@ -4,7 +4,7 @@ const Services = () => {
   const [link, setLink] = useState('')
 
   const handleChange = (event) => {
-    var url = "https://www.youtube.com/embed/" + event.target.value.substr("https://www.youtube.com/watch?v=".length);
+    var url = "https://www.youtube.com/embed/" + event.target.value.substr("https://www.youtube.com/watch?v=".length)+"?autoplay=1";
     localStorage.setItem("uuid", url);
     setLink(url);
   };
@@ -18,7 +18,8 @@ const Services = () => {
             title="Player Video" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen="true"/>
+            allowfullscreen="true"
+            autoplay="true"/>
         )}
         <input className="w-full m-2 p-2 mx-1 rounded-[3px] text-black" type="text" onChange={handleChange} placeholder="link youtube." />     
       </div>
