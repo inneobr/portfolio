@@ -18,7 +18,7 @@ const Servicos = () => {
               animate="show"  
               exit="hidden" 
               className='h2 xl:mt-8'>
-                Meus Serviços <span className='text-accent'>.</span>
+                Serviços <span className='text-accent'>.</span>
             </motion.h2>
 
             <motion.p 
