@@ -15,13 +15,13 @@ export const navData = [
   { name: 'youtube', path: '/youtube', icon: <HiPlay /> },
   { name: 'work', path: '/work', icon: <HiViewColumns /> },
   {
-    name: 'testimonials',
-    path: '/testimonials',
+    name: 'clientes',
+    path: '/clientes',
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
-    name: 'contact',
-    path: '/contact',
+    name: 'contato',
+    path: '/contato',
     icon: <HiEnvelope />,
   },
 ];
