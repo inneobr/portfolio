@@ -2,7 +2,7 @@
 import {
   HiHome,
   HiUser,
-  HiViewColumns,
+  HiSquare3Stack3D,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
   HiPlay,
@@ -13,7 +13,7 @@ export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
   { name: 'youtube', path: '/youtube', icon: <HiPlay /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  { name: 'servicos', path: '/servicos', icon: <HiSquare3Stack3D /> },
   {
     name: 'clientes',
     path: '/clientes',
