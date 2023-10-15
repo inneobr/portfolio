@@ -5,6 +5,7 @@ import {
   HiSquare3Stack3D,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
+  HiCommandLine,
   HiPlay,
 } from 'react-icons/hi2';
 
@@ -14,16 +15,9 @@ export const navData = [
   { name: 'about', path: '/about', icon: <HiUser /> },
   { name: 'youtube', path: '/youtube', icon: <HiPlay /> },
   { name: 'servicos', path: '/servicos', icon: <HiSquare3Stack3D /> },
-  {
-    name: 'clientes',
-    path: '/clientes',
-    icon: <HiChatBubbleBottomCenterText />,
-  },
-  {
-    name: 'contato',
-    path: '/contato',
-    icon: <HiEnvelope />,
-  },
+  { name: 'portfolio', path: '/portfolio', icon: <HiCommandLine /> },
+  { name: 'clientes', path: '/clientes', icon: <HiChatBubbleBottomCenterText />, },
+  { name: 'contato', path: '/contato', icon: <HiEnvelope />, },
 ];
 
 import Link from 'next/link';
