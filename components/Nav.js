@@ -16,7 +16,7 @@ export const navData = [
   { name: 'youtube', path: '/youtube', icon: <HiPlay /> },
   { name: 'servicos', path: '/servicos', icon: <HiSquare3Stack3D /> },
   { name: 'portfolio', path: '/portfolio', icon: <HiCommandLine /> },
-  { name: 'clientes', path: '/clientes', icon: <HiChatBubbleBottomCenterText />, },
+  //{ name: 'clientes', path: '/clientes', icon: <HiChatBubbleBottomCenterText />, },
   { name: 'contato', path: '/contato', icon: <HiEnvelope />, },
 ];
 
