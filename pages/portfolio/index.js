@@ -18,7 +18,7 @@ const Porfolio = () => {
               animate="show"  
               exit="hidden" 
               className='h2 xl:mt-12'>
-                Trabalhos<span className='text-accent'>.</span>
+                Projetos<span className='text-accent'>.</span>
             </motion.h2>
 
             <motion.p 
@@ -27,10 +27,8 @@ const Porfolio = () => {
               animate="show"  
               exit="hidden" 
               className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-justify'>
-                Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industrys 
-                standard dummy text ever since the 1500s, when an unknown printer 
-                took a galley of type and scrambled it to make a type specimen book. 
+                Desenvolvimento de aplicações Node, Next, React, Vue de alta desponibilidade e desempenho para que seu site
+                fique com aquela aparência proficional atraindo muito mais clientes.  
             </motion.p>            
           </div>
 

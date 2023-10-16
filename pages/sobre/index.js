@@ -132,9 +132,9 @@ const About = () => {
               animate='show' 
               exit='hidden'
             >              
-              Há 6 anos, comecei a trabalhar como freelancer como desenvolvedor. 
-              Desde então, fiz trabalho remoto para agências, 
-              prestei consultoria para startups e colaborei em produtos digitais para uso empresarial e de consumo.
+              Todos os aspectos da sociedade contemporânea passam hoje por um acelerado processo de transformação digital. 
+              Especialistas definem o fenômeno como o conjunto de efeitos decorrentes da digitalização do mundo, ou seja, 
+              o processo de mudanças possibilitadas pela conversão da informação analógica em dados digitais. 
             </motion.p>
 
             {/* counters */}

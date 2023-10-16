@@ -12,7 +12,7 @@ import {
 // nav data
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
-  { name: 'about', path: '/about', icon: <HiUser /> },
+  { name: 'sobre', path: '/sobre', icon: <HiUser /> },
   { name: 'youtube', path: '/youtube', icon: <HiPlay /> },
   { name: 'servicos', path: '/servicos', icon: <HiSquare3Stack3D /> },
   { name: 'portfolio', path: '/portfolio', icon: <HiCommandLine /> },
@@ -23,7 +23,7 @@ export const navData = [
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-const Nav = () => {
+const Navbar = () => {
   const router = useRouter();
   const pathname = router.pathname;
   return (    
@@ -66,4 +66,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;
