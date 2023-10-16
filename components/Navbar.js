@@ -1,12 +1,11 @@
 // icons
 import {
-  HiHome,
-  HiUser,
-  HiSquare3Stack3D,
   HiChatBubbleBottomCenterText,
-  HiEnvelope,
   HiCommandLine,
+  HiHome,
   HiPlay,
+  HiSquare3Stack3D,
+  HiUser
 } from 'react-icons/hi2';
 
 // nav data
@@ -17,7 +16,7 @@ export const navData = [
   { name: 'servicos', path: '/servicos', icon: <HiSquare3Stack3D /> },
   { name: 'portfolio', path: '/portfolio', icon: <HiCommandLine /> },
   { name: 'clientes', path: '/clientes', icon: <HiChatBubbleBottomCenterText />, },
-  { name: 'contato', path: '/contato', icon: <HiEnvelope />, },
+ // { name: 'contato', path: '/contato', icon: <HiEnvelope />, },
 ];
 
 import Link from 'next/link';
