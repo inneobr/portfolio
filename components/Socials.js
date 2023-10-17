@@ -12,7 +12,7 @@ import {
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-xl">
+    <div className="flex items-center gap-x-5 text-xl hover:animate-pulse duration-5">
       <Link href={'https://www.youtube.com/@tanomanual'} target="_blank" className="hover:text-accent transition-all duration-300" title="Youtube"><RiYoutubeLine /></Link>
       <Link href={'https://www.instagram.com/eduardocruz.oficial'} target="_blank" className="hover:text-accent transition-all duration-300" title="Instagram"><RiInstagramLine /></Link>
       <Link href={'https://www.facebook.com/inneobr'} target="_blank" className="hover:text-accent transition-all duration-300" title="Facebook"><RiFacebookLine /></Link>

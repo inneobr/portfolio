@@ -1,8 +1,7 @@
-import Image from "next/image";
+import { motion } from 'framer-motion';
+import Avatar from '../components/Avatar';
 import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
-import Avatar from '../components/Avatar';
-import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
 const Home = () => {
@@ -32,10 +31,6 @@ const Home = () => {
             Aprender a como transformar uma ideia em negócio é uma dúvida muito comum entre pessoas que querem começar a empreender.
             Para fazer isso na prática, é preciso ter disciplina com o seu projeto e ficar de olho em alguns pontos fundamentais para que essa ideia consiga sair do papel e ser lucrativa.
           </motion.p>
-           {/* bnt */}
-           <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-           </div>
            <motion.div 
             variants={fadeIn('down', 0.4)}
             initial='hidden'

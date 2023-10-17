@@ -3,18 +3,20 @@ import React, { useState } from "react";
 
 // icons
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaNode,
-  FaVuejs,
-  FaJava,
   FaAngular,
-  FaBootstrap
+  FaCss3Alt,
+  FaHtml5,
+  FaJava,
+  FaReact,
+  FaVuejs
 } from "react-icons/fa";
 
 import {
-  SiPhp
+  SiMariadb,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiSpring
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
@@ -32,67 +34,81 @@ const aboutData = [
     title: 'habilidades',
     info: [
       {
-        title: 'Desenvolvedor Frontend',
+        title: 'Frameworks para desenvolvimento frontend nas linguagens Vue.js React, Angular com habilidades em HTML5 e CSS, SCSS',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaBootstrap />,
-          <FaJs />,
           <FaVuejs />,
+          <FaReact />,
           <FaAngular />,
-          <FaNode />,
+          <FaHtml5 />,
+          <FaCss3Alt />
+          
         ],
       },
       {
-        title: 'Backend',
-        icons: [<FaJava />, <SiPhp />],
+        title: 'Desenvolvimnto Api-Rest em Spring Boot, utilizando técnicas modernas com código limpo, Design Patterns em programação orientada a objetos. ',
+        icons: [ 
+         <SiSpring />,
+         <FaJava />,
+         <SiPostgresql />,
+         <SiMysql />,
+         <SiMariadb />,
+         <SiMongodb />
+        ],
       },
     ],
   },
   {
-    title: 'Prêmios',
+    title: 'Cursos',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'Rocketseat - Java e Spring Boot',
+        stage: '2023',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Alura - Formação Java e Spring Boot',
+        stage: '2022',
+      },
+      {
+        title: 'Microsoft: Tecnologia de IA para Líderes de Negócios. ',
+        stage: '2020'
+      },
+      {
+        title: 'Microsoft: Conceitos de Desenvolvimento de Software.',
+        stage: '2019'
+      },
+      {
+        title: 'Microsoft: Segurança e Privacidade em Computadores',
+        stage: '2018'
+      },
+      {
+        title: 'Microsoft: Fundamentos de Rede.',
+        stage: '2018'
       },
     ],
   },
   {
-    title: 'experiência',
+    title: 'Experiência',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'INSTI /  Coop. Integrada Agroindustial',
+        stage: '2022 - 2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Portal Holistico',
+        stage: '2020 - 2021',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Grupo Orbenk',
+        stage: '2019 - 2020',
       },
     ],
   },
   {
-    title: 'credenciais',
+    title: 'Formação',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'IFPR -Instituto Federal do Paraná',
+        stage: '2017',
       },
     ],
   },
@@ -123,18 +139,17 @@ const About = () => {
               animate='show' 
               exit='hidden' 
             >
-              Histórias <span className="text-accent">cativantes</span> geram designs magníficos
+              Desenvolvimento de <span className="text-accent">Sistemas</span>
             </motion.h2>
 
-            <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-justify"
+            <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
               variants={fadeIn('right', 0.4)} 
               initial='hidden' 
               animate='show' 
               exit='hidden'
             >              
-              Todos os aspectos da sociedade contemporânea passam hoje por um acelerado processo de transformação digital. 
-              Especialistas definem o fenômeno como o conjunto de efeitos decorrentes da digitalização do mundo, ou seja, 
-              o processo de mudanças possibilitadas pela conversão da informação analógica em dados digitais. 
+              Desenvolvimento de aplicativos e sites em React, Vue.js para cooperativas, lojas, centros automotivos, hotéis entre outros. 
+              Consultoria na área de T.I., segurança, outsourcing de profissionais de t.i., scrum e metodologia ágil, data science, softwares customizados.
             </motion.p>
 
             {/* counters */}
@@ -192,7 +207,7 @@ const About = () => {
           </div>
 
           {/* info */}
-          <motion.div className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          <motion.div className="flex flex-col w-full xl:max-w-[48%] h-[480px] "
             variants={fadeIn('left', 0.4)} 
             initial='hidden' 
             animate='show' 
@@ -219,16 +234,17 @@ const About = () => {
                 return (
                   <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
                     {/* title */}
-                    <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                    <div className="hidden md:flex">-</div>
-                    <div>{item.stage}</div>
-                    <div className="flex gap-x-4">
-                      {/* icons */}
-                      {item.icons?.map((icon, itemIndex) => {
-                        return (
-                          <div className="text-2xl text-white">{icon}</div>
-                        )
-                      })}
+                    <div className="items-center justify-center">
+                      <div className="text-justify font-light mb-2 md:mb-0">{item.title}</div>                    
+                      <div>{item.stage}</div>
+                      <div className="flex gap-x-4">
+                        {/* icons */}
+                        {item.icons?.map((icon, itemIndex) => {
+                          return (
+                            <div className="text-2xl text-white my-3">{icon}</div>
+                          )
+                        })}
+                      </div>
                     </div>
                   </div>
                 );

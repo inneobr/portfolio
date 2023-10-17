@@ -1,9 +1,9 @@
-import WorkSlider from '../../components/WorkSlider';
-import Circles from '../../components/Circles';
 import Bulb from '../../components/Bulb';
+import Circles from '../../components/Circles';
+import PortfolioSlider from '../../components/PortfolioSlider';
 
-import { motion } from 'framer-motion'
-import { fadeIn } from '../../variants'
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 
 const Porfolio = () => {
   return (
@@ -27,8 +27,8 @@ const Porfolio = () => {
               animate="show"  
               exit="hidden" 
               className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-justify'>
-                Desenvolvimento de aplicações Node, Next, React, Vue de alta desponibilidade e desempenho para que seu site
-                fique com aquela aparência proficional atraindo muito mais clientes.  
+                Desenvolvimento de aplicações Node, Next, React, Vue,js de alta desponibilidade e desempenho para que seu site
+                fique com aquela aparência profissional atraindo muito mais clientes.                 
             </motion.p>            
           </div>
 
@@ -38,7 +38,7 @@ const Porfolio = () => {
             animate="show"  
             exit="hidden" 
             className='w-full xl:max-w-[65%]'>
-            <WorkSlider />
+            <PortfolioSlider />
           </motion.div>
         </div>
       </div>
