@@ -21,9 +21,9 @@ const workSlides = {
           path: 'https://genesis.integrada.coop.br/'
         },
         {
-          title: 'portfolio',
-          uri:'/portfolio.jpg',
-          path:'/portfolio.jpg'
+          title: 'cacau',
+          uri:'/cacau.jpg',
+          path:'/cacau.jpg'
         },
       ],
     },
