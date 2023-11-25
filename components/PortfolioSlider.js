@@ -22,8 +22,8 @@ const workSlides = {
         },
         {
           title: 'cacau',
-          uri:'/cacau.jpg',
-          path:'/cacau.jpg'
+          uri:'/cacau.png',
+          path:'/cacau.png'
         },
       ],
     },
