@@ -13,7 +13,9 @@ const Header = () => {
               src={'/logo.svg'} 
               width={0} 
               height={0} 
-              alt='' 
+              alt='logo da inneo.org' 
+              loading='lazy'
+              decoding='async'
               priority={true}
             />
           </Link>

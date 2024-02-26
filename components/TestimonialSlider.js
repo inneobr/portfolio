@@ -49,7 +49,7 @@ const TestimonialSlider = () => {
                   relative mx-auto xl:mx-0'>
                   <div className='flex flex-col justify-center text-center'>
                     <div className='mb-2 mx-auto'>
-                      <Image src={person.image} width={100} height={100} alt=''/>
+                      <Image src={person.image} width={100} height={100} loading='lazy' decoding='async'alt='imagem de pessoas que gostam do site'/>
                     </div>
                     <div className='text-lg'>{person.name}</div>
                     <div className='text-[12px] uppercase front-extralight tracking-widest'>

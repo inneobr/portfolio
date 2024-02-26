@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemao: https://inneo.org/sitemap.xml

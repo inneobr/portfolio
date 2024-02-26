@@ -9,7 +9,9 @@ const Bulb = () => {
         width={260}
         height={260}
         className='w-full h-full'
-        alt=''/>
+        alt='imagem pulsante luz vermelha'
+        loading='lazy'
+        decoding='async'/>
     </div>
   );
 };

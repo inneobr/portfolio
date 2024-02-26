@@ -7,7 +7,9 @@ const Avatar = () => {
         src={'/profile-pages.png'} 
         width={737} 
         height={678} 
-        alt='' 
+        alt='organização de paginas'
+        loading='lazy'
+        decoding='async' 
         className="translate-z-0 w-full h-full "/>
     </div>
   );
